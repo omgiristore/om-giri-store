@@ -3,202 +3,191 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Om Giri Store | Quality Products</title>
+<title>OM GIRI STORE | Luxury Men's Fashion</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 
 <style>
+
 *{
 margin:0;
 padding:0;
 box-sizing:border-box;
-font-family:Arial,Helvetica,sans-serif;
-scroll-behavior:smooth;
+font-family:Poppins,sans-serif;
 }
 
 body{
-background:#f5f5f5;
-color:#333;
+background:#050505;
+color:white;
 }
 
 header{
-background:#0b4f8a;
-padding:15px 8%;
 display:flex;
 justify-content:space-between;
 align-items:center;
+padding:20px 8%;
+background:#000;
+border-bottom:2px solid gold;
 position:sticky;
 top:0;
 z-index:1000;
 }
 
 .logo{
-font-size:28px;
+font-size:34px;
+font-family:Cinzel,serif;
 font-weight:bold;
-color:#fff;
+color:gold;
 }
 
 nav a{
 text-decoration:none;
-color:#fff;
+color:white;
 margin-left:25px;
-font-weight:bold;
-transition:.3s;
+font-weight:600;
 }
 
 nav a:hover{
-color:#ffd700;
+color:gold;
 }
 
 .hero{
-height:90vh;
+height:100vh;
+background:linear-gradient(rgba(0,0,0,.75),rgba(0,0,0,.75)),url("https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=1800&q=80");
+background-size:cover;
+background-position:center;
 display:flex;
 justify-content:center;
 align-items:center;
 text-align:center;
-background:linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),url("https://images.unsplash.com/photo-1515169067868-5387ec356754?auto=format&fit=crop&w=1500&q=80");
-background-size:cover;
-background-position:center;
-color:#fff;
 padding:20px;
 }
 
 .hero h1{
-font-size:55px;
-margin-bottom:20px;
+font-size:70px;
+font-family:Cinzel,serif;
+color:gold;
 }
 
 .hero p{
-font-size:20px;
-margin-bottom:30px;
+font-size:22px;
+margin:20px auto;
+max-width:700px;
 }
 
 .btn{
 display:inline-block;
-padding:14px 35px;
-background:#ffd700;
-color:#000;
-text-decoration:none;
-border-radius:30px;
+padding:16px 38px;
+background:gold;
+color:black;
 font-weight:bold;
-transition:.3s;
+border-radius:40px;
+text-decoration:none;
+transition:.4s;
 }
 
 .btn:hover{
-background:#fff;
-}
-
-section{
-padding:70px 8%;
-}
-
-.title{
-text-align:center;
-font-size:35px;
-color:#0b4f8a;
-margin-bottom:40px;
-}
-
-.features{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:25px;
-}
-
-.box{
-background:#fff;
-padding:30px;
-border-radius:10px;
-box-shadow:0 5px 15px rgba(0,0,0,.1);
-text-align:center;
-}
-
-.box h3{
-margin:15px 0;
-color:#0b4f8a;
+background:white;
+transform:scale(1.08);
 }
 
 .products{
+padding:80px 8%;
+}
+
+.products h2{
+text-align:center;
+font-size:45px;
+color:gold;
+margin-bottom:50px;
+font-family:Cinzel;
+}
+
+.grid{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-gap:30px;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:35px;
 }
 
 .card{
-background:#fff;
-border-radius:12px;
+background:rgba(255,255,255,.06);
+backdrop-filter:blur(10px);
+border:1px solid gold;
+border-radius:20px;
 overflow:hidden;
-box-shadow:0 5px 15px rgba(0,0,0,.15);
+transition:.4s;
+}
+
+.card:hover{
+transform:translateY(-15px);
+box-shadow:0 0 30px gold;
 }
 
 .card img{
 width:100%;
-height:220px;
+height:350px;
 object-fit:cover;
 }
 
-.card-content{
-padding:20px;
-}
-
-.card-content h3{
-color:#0b4f8a;
-margin-bottom:10px;
-}
-
-.about{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
-gap:40px;
-align-items:center;
-}
-
-.about img{
-width:100%;
-border-radius:10px;
-}
-
-.contact{
-background:#0b4f8a;
-color:#fff;
+.card h3{
 text-align:center;
+margin:20px 0 10px;
+color:gold;
 }
 
-.contact p{
-margin:12px 0;
-font-size:18px;
+.card p{
+text-align:center;
+padding:0 20px;
+}
+
+.price{
+text-align:center;
+font-size:28px;
+color:gold;
+font-weight:bold;
+margin:20px;
+}
+
+.buy{
+display:block;
+width:80%;
+margin:20px auto 30px;
+text-align:center;
+background:gold;
+padding:14px;
+text-decoration:none;
+font-weight:bold;
+color:black;
+border-radius:30px;
+}
+
+.buy:hover{
+background:white;
 }
 
 footer{
-background:#082f52;
-color:#fff;
+background:#000;
+padding:40px;
 text-align:center;
-padding:18px;
+border-top:2px solid gold;
 }
 
 .whatsapp{
 position:fixed;
-bottom:20px;
 right:20px;
+bottom:20px;
 background:#25D366;
-color:#fff;
-text-decoration:none;
 padding:15px 22px;
+color:white;
+text-decoration:none;
 border-radius:50px;
 font-weight:bold;
-box-shadow:0 5px 15px rgba(0,0,0,.3);
 }
 
 @media(max-width:768px){
 
-header{
-flex-direction:column;
-}
-
-nav{
-margin-top:10px;
-}
-
 .hero h1{
-font-size:38px;
+font-size:42px;
 }
 
 .hero p{
@@ -206,9 +195,11 @@ font-size:18px;
 }
 
 }
+
 </style>
 
 </head>
+
 <body>
 
 <header>
@@ -217,9 +208,8 @@ font-size:18px;
 
 <nav>
 <a href="#">Home</a>
-<a href="#products">Products</a>
-<a href="#about">About</a>
-<a href="#contact">Contact</a>
+<a href="#">Collection</a>
+<a href="#">Contact</a>
 </nav>
 
 </header>
@@ -228,125 +218,81 @@ font-size:18px;
 
 <div>
 
-<h1>Welcome to Om Giri Store</h1>
+<h1>Luxury Men's Fashion</h1>
 
-<p>Your Trusted Store for Quality Products at Affordable Prices.</p>
+<p>Premium Shirts • Jeans • T-Shirts • Latest Collection</p>
 
-<a href="https://wa.me/917068862109" class="btn">Order on WhatsApp</a>
-
-</div>
-
-</section>
-
-<section>
-
-<h2 class="title">Why Choose Us</h2>
-
-<div class="features">
-
-<div class="box">
-<h3>Best Quality</h3>
-<p>Premium quality products with trusted service.</p>
-</div>
-
-<div class="box">
-<h3>Affordable Price</h3>
-<p>Best market prices with great value.</p>
-</div>
-
-<div class="box">
-<h3>Fast Support</h3>
-<p>Quick customer support through WhatsApp.</p>
-</div>
+<a class="btn" href="https://wa.me/917068862109">BUY NOW ON WHATSAPP</a>
 
 </div>
 
 </section>
 
-<section id="products">
+<section class="products">
 
-<h2 class="title">Our Products</h2>
+<h2>NEW ARRIVALS</h2>
 
-<div class="products">
+<div class="grid">
 
 <div class="card">
-<img src="https://images.unsplash.com/photo-1586201375761-83865001e31b?auto=format&fit=crop&w=900&q=80">
-<div class="card-content">
-<h3>Grocery Items</h3>
-<p>Daily household grocery products available.</p>
-</div>
+
+<img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=900&q=80">
+
+<h3>Premium T-Shirt</h3>
+
+<p>100% Cotton Luxury Fit</p>
+
+<div class="price">₹799</div>
+
+<a class="buy" href="https://wa.me/917068862109">Buy on WhatsApp</a>
+
 </div>
 
 <div class="card">
-<img src="https://images.unsplash.com/photo-1511556532299-8f662fc26c06?auto=format&fit=crop&w=900&q=80">
-<div class="card-content">
-<h3>Food Products</h3>
-<p>Fresh and branded food products.</p>
-</div>
+
+<img src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&w=900&q=80">
+
+<h3>Formal Shirt</h3>
+
+<p>Perfect Office & Party Wear</p>
+
+<div class="price">₹999</div>
+
+<a class="buy" href="https://wa.me/917068862109">Buy on WhatsApp</a>
+
 </div>
 
 <div class="card">
-<img src="https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?auto=format&fit=crop&w=900&q=80">
-<div class="card-content">
-<h3>Daily Essentials</h3>
-<p>Everything you need in one place.</p>
-</div>
-</div>
 
-</div>
+<img src="https://images.unsplash.com/photo-1541099649105-f69ad21f3246?auto=format&fit=crop&w=900&q=80">
 
-</section>
+<h3>Blue Denim Jeans</h3>
 
-<section id="about">
+<p>Premium Stretch Fabric</p>
 
-<h2 class="title">About Om Giri Store</h2>
+<div class="price">₹1499</div>
 
-<div class="about">
-
-<img src="https://images.unsplash.com/photo-1556740749-887f6717d7e4?auto=format&fit=crop&w=900&q=80">
-
-<div>
-
-<h2>Trusted Local Store</h2>
-
-<br>
-
-<p>
-Om Giri Store provides quality products with excellent customer service.
-Our mission is to offer genuine products at affordable prices and make shopping easy for everyone.
-</p>
-
-<br>
-
-<a href="https://wa.me/917068862109" class="btn">Chat on WhatsApp</a>
+<a class="buy" href="https://wa.me/917068862109">Buy on WhatsApp</a>
 
 </div>
 
 </div>
-
-</section>
-
-<section class="contact" id="contact">
-
-<h2 class="title" style="color:white;">Contact Us</h2>
-
-<p><strong>Om Giri Store</strong></p>
-
-<p>WhatsApp: +91 7068862109</p>
-
-<p>We are always ready to serve you.</p>
-
-<a href="https://wa.me/917068862109" class="btn">Send Message</a>
 
 </section>
 
 <footer>
 
-© 2026 Om Giri Store. All Rights Reserved.
+<h2 style="color:gold;">OM GIRI STORE</h2>
+
+<p>Men's Premium Clothing Store</p>
+
+<p>WhatsApp: +91 7068862109</p>
+
+<p>© 2026 OM GIRI STORE</p>
 
 </footer>
 
-<a href="https://wa.me/917068862109" class="whatsapp">WhatsApp</a>
+<a class="whatsapp" href="https://wa.me/917068862109">WhatsApp</a>
 
 </body>
 </html>
