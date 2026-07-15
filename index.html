@@ -3,296 +3,200 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>OM GIRI STORE | Luxury Men's Fashion</title>
-
-<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
-
+<title>OM Giri Store | Men's Clothing</title>
 <style>
-
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:Poppins,sans-serif;
-}
-
-body{
-background:#050505;
-color:white;
-}
-
-header{
-display:flex;
-justify-content:space-between;
-align-items:center;
-padding:20px 8%;
-background:#000;
-border-bottom:2px solid gold;
-position:sticky;
-top:0;
-z-index:1000;
-}
-
-.logo{
-font-size:34px;
-font-family:Cinzel,serif;
-font-weight:bold;
-color:gold;
-}
-
-nav a{
-text-decoration:none;
-color:white;
-margin-left:25px;
-font-weight:600;
-}
-
-nav a:hover{
-color:gold;
-}
-
+*{margin:0;padding:0;box-sizing:border-box;font-family:Arial,sans-serif}
+body{background:#111;color:#fff}
+header{position:sticky;top:0;background:#000;padding:15px 8%;display:flex;justify-content:space-between;align-items:center;border-bottom:2px solid #d4af37;z-index:100}
+.logo{font-size:28px;font-weight:bold;color:#d4af37}
+nav a{color:#fff;text-decoration:none;margin-left:20px}
+nav a:hover{color:#d4af37}
 .hero{
-height:100vh;
-background:linear-gradient(rgba(0,0,0,.75),rgba(0,0,0,.75)),url("https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=1800&q=80");
-background-size:cover;
-background-position:center;
+height:70vh;
 display:flex;
+flex-direction:column;
 justify-content:center;
 align-items:center;
 text-align:center;
 padding:20px;
+background:linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.65)),url('https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=1400&q=80') center/cover;
 }
-
-.hero h1{
-font-size:70px;
-font-family:Cinzel,serif;
-color:gold;
-}
-
-.hero p{
-font-size:22px;
-margin:20px auto;
-max-width:700px;
-}
-
-.btn{
-display:inline-block;
-padding:16px 38px;
-background:gold;
-color:black;
+.hero h1{font-size:50px;color:#d4af37}
+.hero p{margin:15px 0;font-size:18px}
+.hero button{
+padding:12px 30px;
+background:#d4af37;
+border:none;
+font-size:16px;
+cursor:pointer;
 font-weight:bold;
-border-radius:40px;
-text-decoration:none;
-transition:.4s;
+border-radius:6px;
 }
-
-.btn:hover{
-background:white;
-transform:scale(1.08);
-}
-
-.products{
-padding:80px 8%;
-}
-
-.products h2{
-text-align:center;
-font-size:45px;
-color:gold;
-margin-bottom:50px;
-font-family:Cinzel;
-}
-
+.hero button:hover{background:#fff}
+.products{padding:60px 8%}
+.products h2{text-align:center;color:#d4af37;margin-bottom:35px}
 .grid{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
-gap:35px;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:25px;
 }
-
 .card{
-background:rgba(255,255,255,.06);
-backdrop-filter:blur(10px);
-border:1px solid gold;
-border-radius:20px;
+background:#1b1b1b;
+border:1px solid #333;
+border-radius:10px;
 overflow:hidden;
-transition:.4s;
+transition:.3s;
 }
-
 .card:hover{
-transform:translateY(-15px);
-box-shadow:0 0 30px gold;
+transform:translateY(-8px);
+box-shadow:0 0 20px rgba(212,175,55,.35);
 }
-
 .card img{
 width:100%;
-height:350px;
+height:280px;
 object-fit:cover;
 }
-
-.card h3{
-text-align:center;
-margin:20px 0 10px;
-color:gold;
-}
-
-.card p{
-text-align:center;
-padding:0 20px;
-}
-
+.info{padding:18px;text-align:center}
+.info h3{margin-bottom:10px}
 .price{
-text-align:center;
-font-size:28px;
-color:gold;
+color:#d4af37;
+font-size:22px;
 font-weight:bold;
-margin:20px;
+margin:10px 0;
 }
-
+.btns{
+display:flex;
+gap:10px;
+justify-content:center;
+margin-top:15px;
+flex-wrap:wrap;
+}
+button{
+padding:10px 16px;
+border:none;
+cursor:pointer;
+border-radius:5px;
+font-weight:bold;
+}
 .buy{
-display:block;
-width:80%;
-margin:20px auto 30px;
-text-align:center;
-background:gold;
-padding:14px;
-text-decoration:none;
-font-weight:bold;
-color:black;
-border-radius:30px;
+background:#d4af37;
+color:#000;
 }
-
-.buy:hover{
-background:white;
+.buy:hover{background:#fff}
+.wa{
+background:#25D366;
+color:#fff;
 }
-
+.wa:hover{opacity:.9}
 footer{
 background:#000;
-padding:40px;
+padding:20px;
 text-align:center;
-border-top:2px solid gold;
+margin-top:40px;
+border-top:2px solid #d4af37;
 }
-
-.whatsapp{
-position:fixed;
-right:20px;
-bottom:20px;
-background:#25D366;
-padding:15px 22px;
-color:white;
-text-decoration:none;
-border-radius:50px;
-font-weight:bold;
+@media(max-width:700px){
+.hero h1{font-size:34px}
+nav{display:none}
 }
-
-@media(max-width:768px){
-
-.hero h1{
-font-size:42px;
-}
-
-.hero p{
-font-size:18px;
-}
-
-}
-
 </style>
-
 </head>
-
 <body>
 
 <header>
-
-<div class="logo">OM GIRI STORE</div>
-
+<div class="logo">OM Giri Store</div>
 <nav>
 <a href="#">Home</a>
-<a href="#">Collection</a>
-<a href="#">Contact</a>
+<a href="#products">Products</a>
+<a href="#contact">Contact</a>
 </nav>
-
 </header>
 
 <section class="hero">
-
-<div>
-
-<h1>Luxury Men's Fashion</h1>
-
-<p>Premium Shirts • Jeans • T-Shirts • Latest Collection</p>
-
-<a class="btn" href="https://wa.me/917068862109">BUY NOW ON WHATSAPP</a>
-
-</div>
-
+<h1>Premium Men's Fashion</h1>
+<p>T-Shirts • Pants • Kurtas</p>
+<button onclick="document.getElementById('products').scrollIntoView({behavior:'smooth'})">
+Shop Now
+</button>
 </section>
 
-<section class="products">
-
-<h2>NEW ARRIVALS</h2>
+<section class="products" id="products">
+<h2>Featured Products</h2>
 
 <div class="grid">
 
 <div class="card">
-
-<img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=900&q=80">
-
-<h3>Premium T-Shirt</h3>
-
-<p>100% Cotton Luxury Fit</p>
-
-<div class="price">₹799</div>
-
-<a class="buy" href="https://wa.me/917068862109">Buy on WhatsApp</a>
-
+<img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=700&q=80">
+<div class="info">
+<h3>Black Premium T-Shirt</h3>
+<div class="price">₹699</div>
+<div class="btns">
+<button class="buy" onclick="buy('Black Premium T-Shirt')">Buy Now</button>
+<button class="wa" onclick="order('Black Premium T-Shirt','699')">WhatsApp</button>
+</div>
+</div>
 </div>
 
 <div class="card">
+<img src="https://images.unsplash.com/photo-1473966968600-fa801b869a1a?auto=format&fit=crop&w=700&q=80">
+<div class="info">
+<h3>Classic Blue Jeans</h3>
+<div class="price">₹1299</div>
+<div class="btns">
+<button class="buy" onclick="buy('Classic Blue Jeans')">Buy Now</button>
+<button class="wa" onclick="order('Classic Blue Jeans','1299')">WhatsApp</button>
+</div>
+</div>
+</div>
 
-<img src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&w=900&q=80">
-
-<h3>Formal Shirt</h3>
-
-<p>Perfect Office & Party Wear</p>
-
+<div class="card">
+<img src="https://images.unsplash.com/photo-1593032465171-8bd4b1d71d46?auto=format&fit=crop&w=700&q=80">
+<div class="info">
+<h3>Traditional Kurta</h3>
 <div class="price">₹999</div>
-
-<a class="buy" href="https://wa.me/917068862109">Buy on WhatsApp</a>
-
+<div class="btns">
+<button class="buy" onclick="buy('Traditional Kurta')">Buy Now</button>
+<button class="wa" onclick="order('Traditional Kurta','999')">WhatsApp</button>
 </div>
-
-<div class="card">
-
-<img src="https://images.unsplash.com/photo-1541099649105-f69ad21f3246?auto=format&fit=crop&w=900&q=80">
-
-<h3>Blue Denim Jeans</h3>
-
-<p>Premium Stretch Fabric</p>
-
-<div class="price">₹1499</div>
-
-<a class="buy" href="https://wa.me/917068862109">Buy on WhatsApp</a>
-
+</div>
 </div>
 
 </div>
-
 </section>
 
-<footer>
-
-<h2 style="color:gold;">OM GIRI STORE</h2>
-
-<p>Men's Premium Clothing Store</p>
-
-<p>WhatsApp: +91 7068862109</p>
-
-<p>© 2026 OM GIRI STORE</p>
-
+<footer id="contact">
+<h3 style="color:#d4af37;margin-bottom:10px;">OM Giri Store</h3>
+<p>Premium Men's Clothing</p>
+<p>Email: your@email.com</p>
+<p>Phone: +91 9876543210</p>
+<p style="margin-top:10px;">© 2026 OM Giri Store. All Rights Reserved.</p>
 </footer>
 
-<a class="whatsapp" href="https://wa.me/917068862109">WhatsApp</a>
+<script>
+const whatsappNumber="919876543210"; // Change to your WhatsApp number
+
+function buy(product){
+alert("Thank you for choosing "+product+"!\nProceeding to checkout.");
+}
+
+function order(product,price){
+const msg=`Hello, I want to order:\n\n${product}\nPrice: ₹${price}`;
+window.open(
+`https://wa.me/${whatsappNumber}?text=${encodeURIComponent(msg)}`,
+"_blank"
+);
+}
+
+document.querySelectorAll(".card").forEach((card,i)=>{
+card.style.opacity="0";
+card.style.transform="translateY(40px)";
+setTimeout(()=>{
+card.style.transition=".6s";
+card.style.opacity="1";
+card.style.transform="translateY(0)";
+},i*200);
+});
+</script>
 
 </body>
 </html>
